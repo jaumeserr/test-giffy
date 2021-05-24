@@ -19,7 +19,7 @@ function App() {
     }>
       <div className="App">
         <section className="App-content">
-          <h1>App</h1>
+          <h1>Giffy</h1>
           <button>
             <Link to="/">Back to home</Link>
           </button>
