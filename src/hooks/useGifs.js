@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import getGifs from "../services/getGifs";
+
 import GifContext from '../context/GifsContext';
 
 const useGifs = ({ keyword } = { keyword: null }) => {
@@ -14,7 +15,6 @@ const useGifs = ({ keyword } = { keyword: null }) => {
       // recuperamos la keyword del localStorage
       //const keywordToUse = keyword ? keyword : localStorage.getItem('lastKeyword')
       const keywordToUse = keyword || localStorage.getItem('lastKeyword') || 'random'
-
       getGifs({ keyword: keywordToUse }).then((gifs) => {
         setGifs(gifs);
         setLoading(false);
