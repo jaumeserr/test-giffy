@@ -4,8 +4,8 @@ const Category = ({ options }) => {
   return (
     <>
       <ul>
-        {options.map((option) => (
-          <li>
+        {options.map((option, index) => (
+          <li key={`${option}${index}`}>
             <Link to={`/search/${option}`}>{option}</Link>
           </li>
         ))}
