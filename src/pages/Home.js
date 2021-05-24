@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import ListOfGifs from "../components/ListOfGifs";
